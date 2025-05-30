@@ -1,0 +1,55 @@
+/* Masonry Layout Project 5/30/2025 */
+
+body {
+  background: #a87665;
+  background: radial-gradient(
+    circle,
+    rgba(168, 118, 101, 1) 39%,
+    rgba(201, 166, 141, 1) 75%
+  );
+}
+
+main {
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  text-shadow: rgb(199, 127, 130) 0 1px 8px;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: rgb(109, 35, 51);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: rgb(202, 78, 111) 0 2px 15px;
+}
+img:hover {
+  transform: scale(1.02);
+  box-shadow: rgb(92, 44, 30) 0 2px 15px;
+  transition: 0.15s;
+}
+
+section#gallery {
+  column-count: 3;
+  column-gap: 35px;
+}
+
+div.item {
+  margin-bottom: 35px;
+}
+
+/* Media Query for tablet or smaller screens */
+
+@media screen and (max-width: 760px) {
+  section#gallery {
+    column-count: 2;
+    column-gap: 15px;
+  }
+}
